@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dslop">
+    <TextView
+        android:id="@+id/tv0"
+        android:text="Tên sv"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:text="Mã sv"
+        android:layout_marginLeft="5dp"
+        android:textSize="20sp"
+        android:id="@+id/tv1"
+       android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/tv0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+></TextView>
+    <TextView
+        android:text="Mã lớp"
+        android:textSize="20sp"
+        android:id="@+id/tv2"
+        android:layout_toRightOf="@+id/tv1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></TextView>
+
+    <TextView
+        android:text="Số tín"
+        android:textSize="20sp"
+        android:id="@+id/tv3"
+
+        android:layout_toRightOf="@+id/tv2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></TextView>
+    <TextView
+        android:text="Học kỳ"
+        android:textSize="20sp"
+        android:id="@+id/tv4"
+        android:layout_toRightOf="@+id/tv3"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></TextView>
+
+    <TextView
+        android:text="Tên lớp"
+        android:textSize="20sp"
+        android:id="@+id/tv5"
+        android:layout_toRightOf="@+id/tv4"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></TextView>
+
+
+    <ListView
+        android:id="@+id/dslop"
+        android:layout_below="@id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ListView>
+</RelativeLayout>

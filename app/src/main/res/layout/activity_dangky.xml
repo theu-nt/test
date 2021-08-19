@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dangky">
+    <TextView
+        android:id="@+id/tmsv"
+        android:text="Nhập mã sinh viên"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <EditText
+        android:id="@+id/masvdk"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="170dp"
+
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"></EditText>
+    <TextView
+        android:id="@+id/tml"
+        android:layout_below="@id/tmsv"
+        android:text="Nhập mã lớp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <EditText
+        android:id="@+id/malopdk"
+        android:layout_below="@id/masvdk"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="170dp"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"></EditText>
+    <TextView
+        android:id="@+id/tkh"
+        android:layout_below="@id/tml"
+        android:text="Nhập kỳ học"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <EditText
+        android:id="@+id/kyhoc"
+        android:layout_below="@id/malopdk"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="170dp"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"></EditText>
+    <TextView
+        android:id="@+id/ttc"
+        android:layout_below="@id/tkh"
+        android:text="Nhập số tín chỉ"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <EditText
+        android:id="@+id/tc"
+        android:layout_below="@id/kyhoc"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="170dp"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"></EditText>
+    <Button
+        android:text="Đăng ký"
+        android:id="@+id/btndangky"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/ttc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Button>
+
+    <Button
+        android:text="Load"
+        android:id="@+id/btnload"
+        android:layout_below="@id/tc"
+        android:layout_marginLeft="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></Button>
+    <TextView
+        android:text="Mã SV"
+        android:id="@+id/tv1"
+        android:textSize="15sp"
+        android:layout_below="@id/btndangky"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:layout_marginLeft="5dp"
+
+        android:text="Mã lớp"
+        android:id="@+id/tv2"
+        android:textSize="15sp"
+        android:layout_below="@id/btndangky"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:layout_marginLeft="5dp"
+
+        android:text="Số tc"
+        android:id="@+id/tv3"
+        android:textSize="15sp"
+        android:layout_below="@id/btndangky"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <TextView
+        android:text="Kỳ học"
+        android:id="@+id/tv4"
+        android:textSize="15sp"
+        android:layout_below="@id/btndangky"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/tv3"
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+    <ListView
+        android:id="@+id/lvdk"
+        android:layout_below="@id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></ListView>
+
+
+
+
+
+</RelativeLayout>
